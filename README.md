@@ -1,5 +1,5 @@
 
-![logo](https://rometheme.pro/wp-content/uploads/2022/01/rometheme_logo_2png.png)
+![logo](https://rometheme.net/wp-content/uploads/2021/01/rometheme-logo-yellow.png.webp)
 
 # Rometheme For Elementor
 
