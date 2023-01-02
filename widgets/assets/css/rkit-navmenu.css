@@ -1,0 +1,203 @@
+.rkit-navmenu-container {
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.rkit-navmenu-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.rkit-navmenu-container a {
+    border-bottom: none;
+}
+
+.rkit-dropdown {
+    display: block;
+    height: auto;
+}
+
+.rkit-dropdown-breakpointMobile {
+    display: inline-flex;
+    position: absolute;
+    visibility: collapse;
+    flex-direction: column;
+    opacity: 0;
+    margin-top: -10px;
+    overflow: hidden;
+    transition: all 0.5s;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.rkit-dropdown:hover .rkit-dropdown-breakpointMobile {
+    opacity: 1;
+    margin-top: 0;
+    visibility: visible;
+}
+
+.rkit-submenu-icon{
+    text-align: center;
+}
+
+.rkit-dropdown-breakpointTablet {
+    display: inline-flex;
+    position: absolute;
+    visibility: collapse;
+    opacity: 0;
+    margin-top: -10px;
+    overflow: hidden;
+    transition: all 0.5s;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.rkit-dropdown:hover .rkit-dropdown-breakpointTablet {
+    opacity: 1;
+    margin-top: 0;
+    visibility: visible;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.rkit-icon-open {
+    transition: transform 0.5s;
+}
+
+.rkit-icon-close {
+    transition: transform 0.5s;
+    opacity: 0;
+    transform: rotate(90deg);
+    max-height: 0px;
+}
+
+.d-none {
+    display: none;
+}
+
+.rkit-navmenu-breakpointTablet {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+    z-index: 9999;
+}
+
+.rkit-navmenu-breakpointMobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+    z-index: 9999;
+}
+
+.rkit-hamburger-breakpointMobile {
+    display: none;
+}
+
+.rkit-hamburger-breakpointTablet {
+    display: none;
+}
+
+.menu-list-item {
+    transition: all 0.5s;
+}
+
+.text-menu {
+    transition: all 0.5s;
+}
+
+.rkit-btn-hamburger {
+    transition: all 0.5s;
+    background-color: #ffb901;
+}
+
+.rkit-dropdown-background {
+    background-color: #bfbfbf;
+
+}
+
+.rkit-dropdown-background>a {
+    padding-inline: 15px;
+}
+
+.rkit-hamburger-container {
+    display: flex;
+}
+
+.rkit-navmenu-padding {
+    padding: 10px
+}
+
+@media only screen and (max-width: 1024px) {
+    .rkit-navmenu-breakpointTablet {
+        max-height: 0px;
+        flex-direction: column;
+        position: absolute !important;
+        width: 100%;
+        background-color: rgb(230, 230, 230);
+    }
+
+    .rkit-hamburger-breakpointTablet {
+        display: block !important;
+    }
+
+    .rkit-dropdown-breakpointTablet {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        flex-direction: column;
+        max-height: 0px;
+        margin-top: 0px;
+    }
+
+    .rkit-dropdown:hover .rkit-dropdown-breakpointTablet {
+        visibility: visible;
+        max-height: 1000px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .rkit-navmenu-breakpointMobile {
+        max-height: 0px;
+        flex-direction: column;
+        position: absolute !important;
+        width: 100%;
+        background-color: rgb(230, 230, 230);
+    }
+
+    .rkit-hamburger-breakpointMobile {
+        display: block !important;
+    }
+
+    .rkit-dropdown-breakpointMobile {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        flex-direction: column;
+        max-height: 0px;
+        margin-top: 0px;
+    }
+
+    .rkit-dropdown:hover .rkit-dropdown-breakpointMobile {
+        visibility: visible;
+        max-height: 1000px;
+    }
+
+}
