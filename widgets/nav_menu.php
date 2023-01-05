@@ -73,7 +73,7 @@ class Nav_Menu_Rometheme extends \Elementor\Widget_Base
 
     function check_active_menu($menu_item)
     {
-        $actual_link = esc_url((isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+        $actual_link = sanitize_url((isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
         if ($actual_link == $menu_item['url']) {
             return 'rkit-navmenu-active';
         }
@@ -81,7 +81,7 @@ class Nav_Menu_Rometheme extends \Elementor\Widget_Base
     }
     function text_check_active_menu($menu_item)
     {
-        $actual_link = esc_url((isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+        $actual_link = sanitize_url((isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
         if ($actual_link == $menu_item['url']) {
             return 'rkit-navmenu-activetext';
         }
