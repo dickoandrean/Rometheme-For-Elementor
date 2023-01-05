@@ -402,7 +402,6 @@ class Offcanvas_Rometheme extends \Elementor\Widget_Base
                 <div class="rkit-offcanvas-body">
                     <?php
                     $template = get_post($settings['menu-select']);
-                    // $content = apply_filters('the_content', $template->post_content);
                     if (!empty($template)) {
                         echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display($settings['menu-select']);
                     }
